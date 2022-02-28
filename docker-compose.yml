@@ -1,0 +1,8 @@
+version: '3'
+services:
+    frpc:
+        image: cloverzrg/frpc-docker
+        volumes:
+            - ./frpc.ini:/conf/frpc.ini
+        container_name: frpc
+        network_mode: host
